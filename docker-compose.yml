@@ -26,10 +26,10 @@ services:
   db:
     image: mysql:8.0.22
     environment:
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DB=${MYSQL_DB}
+      - MYSQL_USER=username
+      - MYSQL_PASSWORD=password
+      - MYSQL_DB=dbname
+      - MYSQL_ROOT_PASSWORD=rootpassword
     ports:
       - '5432:5432'
 
